@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+<link rel="import" href="../wine-cards/wine-cards.html">
+
+
+<dom-module id="card-layout">
+
+    <template>
+        <div class="card-container">
+            <div class="flex-card">
+                <div class="card-content">
+                <wine-cards></wine-cards>
+                </div>
+            </div>
+
+        </div>
+    </template>
+
+    <script>
+        Polymer({ is: 'card-layout' });
+    </script>
+
+</dom-module>

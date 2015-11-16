@@ -1,0 +1,126 @@
+{
+
+      "vinos": [
+        {
+          "nombre": "Fino Tío Pepe",
+          "título": "El más famoso de González Byass",
+          "tipo": "generosos",
+          "puntuacionMedia": 92,
+          "productor": "Bodegas González Byass",
+          "denominación": "D.O. Jerez-Xérès-Sherry-Manzanilla de Sanlúcar de Barrameda",
+          "variedad": "100% Palomino Fino",
+          "descripcion": "El histórico cartel de la Puerta del Sol de Madrid convirtió el fino Tío Pepe en la marca más reconocida de González Byass. Todo un clásico. Insuperable relación calidad precio.",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/t/i/tio-pepe-fino-muy-seco-001.jpg",
+          "imagenDetalle":"http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/t/i/tio-pepe-fino-muy-seco-001.jpg"
+        },
+        {
+          "nombre": "Manzanilla La Gitana Blanco",
+          "título": "Una manzanilla clásica",
+          "tipo": "generosos",
+          "puntuacionMedia": 92,
+          "precionMedio": "6€",
+          "productor": "Bodegas Hidalgo-La Gitana",
+          "denominación": "D.O. Jerez-Xérès-Sherry-Manzanilla de Sanlúcar de Barrameda",
+          "variedad": "100% Palomino Fino",
+          "descripcion": "La singularidad de los vinos de crianza biológica españoles es apreciada y admirada en todo el mundo. La Gitana es un claro ejemplo de tradición elaboradora y sabores actuales que siguen en pleno auge, fascinando y deleitando al aficionado.",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/m/a/manzanilla-la-gitana-001.jpg",
+          "imagenDetalle":"http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/m/a/manzanilla-la-gitana-001.jpg"
+        },
+        {
+          "nombre": "Gran Coronas Tinto Reserva 2010",
+          "título": "El vino top de bodegas Torres",
+          "tipo": "tinto reserva",
+          "puntuacionMedia": 90,
+          "precionMedio": "9€",
+          "productor": "Bodegas Torres",
+          "denominación": "D.O. Penedès",
+          "variedad": "85% Cabernet Sauvignon, 15% Tempranillo",
+          "descripcion": "Gran Coronas Reserva 2010 es un excepcional reserva elaborado por Torres, referente indiscutible de los vinos elaborados con la deseada uva cabernet sauvignon en España.",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/g/r/gran-coronas-tinto-reserva-2010-001.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/g/r/gran-coronas-tinto-reserva-2010-001.jpg"
+        },
+        {
+          "nombre": "Gran Colegiata Roble Francés Tinto Crianza 2009",
+          "título": "Crianza Excelente de la bodega más emblemática de Toro",
+          "tipo": "Tinto Crianza",
+          "puntuacionMedia": 90,
+          "precionMedio": "9€",
+          "productor": "Bodegas Fariña",
+          "denominación": "D.O. Toro",
+          "variedad": "100% Tinta de Toro",
+          "descripcion": "Gran Colegiata Roble Francés Crianza 2009 es un tinto de gama alta de la bodega líder de la D.O. Toro: Fariña. A un precio absolutamente excepcional.",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/g/r/gran-colegiata-roble-franc_s-tinto-crianza-2009-001_2.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/g/r/gran-colegiata-roble-franc_s-tinto-crianza-2009-001_2.jpg"
+        },
+        {
+          "nombre": "Shaya Verdejo Blanco 2013",
+          "título": "La familia Gil en Rueda",
+          "tipo": "Blanco",
+          "puntuacionMedia": 92,
+          "precionMedio": "9€",
+          "productor": "Bodegas y Viñedos Shaya",
+          "denominación": "D.O. Rueda",
+          "variedad": "100% Verdejo",
+          "descripcion": "Shaya es un proyecto de la Familia Gil (creadora de algunos de los mejores vinos del país, como El Nido). Recomendamos Shaya Verdejo 2013, un blanco parcialmente fermentado en roble en el que destaca el carácter varietal.",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/s/h/shaya-verdejo-blanco-2013-001.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/s/h/shaya-verdejo-blanco-2013-001.jpg"
+        },
+        {
+          "nombre": "Prima 2012",
+          "título": "Toro por Mariano García",
+          "tipo": "Tinto con crianza",
+          "puntuacionMedia": 90,
+          "precionMedio": "9€",
+          "productor": "Bodegas y Viñedos Maurodos",
+          "denominación": "D.O. Toro",
+          "variedad": "10% Garnacha Tinta, 90% Tinta de Toro",
+          "descripcion": "Prima 2012 es uno de los vinos con mejor relación calidad-precio del mercado. Un tinto que lleva la firma de Mariano García, exenólogo de Vega Sicilia y artífice de algunos de los mejores vinos del país en sus proyectos Mauro y Maurodos.",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/p/r/prima-tinto-con-crianza-2012-001_1.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/p/r/prima-tinto-con-crianza-2012-001_1.jpg"
+        },
+        {
+          "nombre": "Prima 2012",
+          "título": "Pura esencia tempranillo",
+          "tipo": "Tinto crianza",
+          "puntuacionMedia": 93,
+          "precionMedio": "10.25€",
+          "productor": "Bodegas Obalo",
+          "denominación": "D.O.Ca. Rioja",
+          "variedad": "100% Tempranillo",
+          "descripcion": "Obalo Crianza 2011 recoge la esencia del tempranillo de cepas viejas de una de las mejores zonas riojanas: la comarca de la Sonsierra. Además, nace de una cosecha que obtuvo la calificación de Excelente,",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/o/b/obalo-crianza-2011-001.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/o/b/obalo-crianza-2011-001.jpg"
+        },
+        {
+          "nombre": "Lan Tinto Reserva 2007",
+          "título": "Personalidad riojana",
+          "puntuacionMedia": 90,
+          "precionMedio": "11.50€",
+          "tipo": "Tinto Reserva",
+          "productor": "Bodegas Lan",
+          "denominación": "D.O.Ca. Rioja",
+          "variedad": "Garnacha Tinta, Mazuelo, Tempranillo",
+          "descripcion": "Obalo Crianza 2011 recoge la esencia del tempranillo de cepas viejas de una de las mejores zonas riojanas: la comarca de la Sonsierra. Además, nace de una cosecha que obtuvo la calificación de Excelente,",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/l/a/lan-tinto-reserva-2007.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/o/b/obalo-crianza-2011-001.jpg"
+        },
+        {
+          "nombre": "Señorío de Ondarre Tinto Reserva 2009",
+          "título": "Un exquisito rioja de corte clásico",
+          "puntuacionMedia": 90,
+          "precionMedio": "12€",
+          "tipo": "Tinto Reserva",
+          "productor": "Bodegas Ondarre",
+          "denominación": "D.O.Ca. Rioja",
+          "variedad": "Garnacha Tinta, Mazuelo, Tempranillo",
+          "descripcion": "Obalo Crianza 2011 recoge la esencia del tempranillo de cepas viejas de una de las mejores zonas riojanas: la comarca de la Sonsierra. Además, nace de una cosecha que obtuvo la calificación de Excelente,",
+          "imagen": "http://www.vinoseleccion.com/media/catalog/product/cache/1/small_image/76x184/9df78eab33525d08d6e5fb8d27136e95/s/e/se_or_o-de-ondarre-tinto-reserva-2009-001.jpg",
+          "imagenDetalle": "http://www.vinoseleccion.com/media/catalog/product/cache/1/image/220x445/9df78eab33525d08d6e5fb8d27136e95/s/e/se_or_o-de-ondarre-tinto-reserva-2009-001.jpg"
+        }
+
+
+
+      ]
+
+
+}

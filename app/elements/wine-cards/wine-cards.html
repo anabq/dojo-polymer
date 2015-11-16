@@ -1,0 +1,177 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+
+<dom-module id="wine-cards">
+
+    <style>
+        .card {
+          --paper-card-header-color: var(--paper-grey-900);
+
+          --paper-card-header-text: {
+            font-weight: 400;
+            position: initial;
+          };
+
+          --paper-card: {
+            margin-bottom: 16px;
+            border-radius: 2px;
+          };
+
+          box-sizing: border-box;
+        }
+
+        .card-container {
+          width: 90%;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media all and (max-width: 1024px) {
+          .card-container {
+            @apply(--layout-vertical);
+            @apply(--layout-wrap);
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .card {
+            @apply(--layout-flex-12);
+          }
+        }
+
+        @media all and (min-width: 1025px) {
+          .card-container {
+            @apply(--layout-horizontal);
+            @apply(--layout-wrap);
+          }
+          .card {
+            @apply(--layout-flex-none);
+            width: calc(50% - 16px);
+            margin: 0 8px 16px 8px;
+          }
+
+        }
+        @media all and (min-width: 1366px) {
+          .card-container {
+            @apply(--layout-horizontal);
+            @apply(--layout-wrap);
+          }
+          .card {
+            @apply(--layout-flex-none);
+            width: calc(33.3% - 16px);
+            margin: 0 8px 16px 8px;
+          }
+
+        }
+
+
+    </style>
+
+    <template if="{{smallScreen}}">
+
+      <div class="card-container">
+
+        <iron-media-query query="(min-width: 600px)" query-matches="{{wide}}"></iron-media-query>
+
+
+
+        <paper-card heading="Vinos tintos jóvenes" class="card"
+                    image="../../images/wine-types/tintos-jovenes.jpg">
+          <div class="card-content">
+            El valor principal de los vinos tintos jóvenes es la conservación de sus características primarias. Entre ellas destacan su color, aroma, acidez y la jugosidad de sus taninos.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos tintos roble" class="card"
+                    image="../../images/wine-types/tintos-roble.jpg">
+          <div class="card-content">
+            Los vinos tintos de roble suelen ser caldos muy sabrosos y golosos. Sus notas a fruta y barrica le aportan elegancia, consistencia y permiten una vida más larga.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos tintos de crianza" class="card"
+                    image="../../images/wine-types/tintos-crianza.jpg">
+          <div class="card-content">
+            Son los tintos más consumidos en España. El proceso de crianza aporta serenidad y pule las características de estos reputados caldos.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos tintos reserva" class="card"
+                    image="../../images/wine-types/tintos-reserva.jpg">
+          <div class="card-content">
+            Estos caldos se consideran reserva en España después de un periodo de crianza en roble y botella de 36 meses como mínimo, con una duración mínima de 12 meses en la barrica de roble.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos tintos gran reserva" class="card"
+                    image="../../images/wine-types/tintos-gran-reserva.jpg">
+          <div class="card-content">
+            Estos vinos se crían durante al menos 24 meses en madera de roble. Después, envejecen en botella al menos 36 meses, adoptando las características de estos caldos rotundos y nobles.</div>
+        </paper-card>
+
+        <paper-card heading="Vinos rosados" class="card"
+                    image="../../images/wine-types/rosados.jpg">
+          <div class="card-content">
+            El color de estos vinos se obtiene de uvas tintas fermentadas en leve contacto con las partes sólidas de uva y racimo, que contienen las sustancias naturales con colorantes.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos blancos jóvenes aromáticos" class="card"
+                    image="../../images/wine-types/blancos-jovenes-aromaticos.jpg"
+                    wide-layout$="{{wide}}">
+          <div class="card-content">
+            <!--<template is="dom-if" if="{{!wide}}">
+              The viewport is less than 600px wide, so the items' titles will
+              not float.
+            </template>
+            <template is="dom-if" if="{{wide}}">
+              The viewport is at least 600px, so the items' titles will float
+              to the left.
+            </template>-->
+            Estos vinos conservan sus cualidades aromáticas y características primarias. Su ligereza y acidez, así como sus aromas a flores y frutas son su carta de presentación.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos blancos secos con madera" class="card"
+                    image="../../images/wine-types/blancos-secos-madera.jpg">
+          <div class="card-content">
+            Un vino blanco seco alcanza esta categoría tras haber tenido contacto prolongado con madera, generalmente de roble.
+          </div>
+
+        </paper-card>
+
+        <paper-card heading="Vinos blancos secos naturales" class="card"
+                    image="../../images/wine-types/blancos-secos-naturales.jpg">
+          <div class="card-content">
+            Estos vinos blancos tienen más estructura que los blancos jóvenes aromáticos así como buen equilibrio, acidez y alcohol, lo que hace que tarden en evolucionar y envejecer.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos espumosos" class="card"
+                    image="../../images/wine-types/espumosos.jpg">
+          <div class="card-content">
+            Estos vinos se definen por conservar de forma natural gas (anhídrido carbónico) con una presión superior a 2,5 bares. Sin duda, el espumoso más famoso en el mundo es el champagne.
+          </div>
+        </paper-card>
+
+        <paper-card heading="Vinos generosos secos" class="card"
+                    image="../../images/wine-types/generosos-secos.jpg">
+          <div class="card-content">
+            Alcanzan una alta graduación de alcohol, entre 14° y 23°, derivada del tipo de uva y con una gran amplitud y aromas, como de cuerpo y estructura.
+          </div>
+        </paper-card>
+
+      </div>
+
+
+    </template>
+
+    <script>
+        Polymer({ is: 'wine-cards' });
+    </script>
+
+</dom-module>

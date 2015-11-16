@@ -1,0 +1,213 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/firebase-element/firebase-collection.html">
+<link rel="import" href="../../bower_components/firebase-element/firebase-document.html">
+
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/iron-icons/maps-icons.html">
+
+<link rel="import" href="../../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+
+<dom-module id="re-wine" is="dom-bind">
+
+    <template is="dom-bind">
+        <style>
+            :host {
+                display: block;
+            }
+            paper-card {
+              --paper-card-header-color: var(--paper-grey-900);
+
+              --paper-card-header-text: {
+                font-weight: 400;
+                position: initial;
+              };
+
+              --paper-card: {
+                margin-bottom: 16px;
+                border-radius: 2px;
+                min-width: 340px;
+
+                @apply(--layout-flex-12);
+              };
+
+              box-sizing: border-box;
+            }
+
+            .card-content {
+              overflow: hidden;
+            }
+
+            .card-actions {
+              padding: 5px 16px;
+              position: absolute;
+              bottom: 20px;
+            }
+
+            .line-clamp {
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              max-height:2.6em;
+              overflow: hidden;
+            }
+
+            .title {
+              position: absolute;
+              top: 0;
+              left: 95px;
+              height: 100%;
+              box-sizing: border-box;
+              padding-top: 24px;
+              padding-bottom: 24px;
+              width: calc(100% - 95px);
+            }
+
+            .location {
+              line-height: 1.3em;
+              height: 1.3em;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              width: calc(100% - 24px);
+              display: inline-block;
+              vertical-align: bottom;
+            }
+
+            .large {
+              color: var(--paper-grey-900);
+              font-size: 34px;
+              font-weight: 300;
+              line-height:1.3em;
+            }
+
+            .medium {
+              color: var(--paper-grey-900);
+              font-size: 20px;
+              font-weight: 500;
+              line-height:1.3em;
+            }
+
+            .small {
+              color: var(--paper-grey-800);
+              font-size: 13px;
+              line-height:1.3em;
+            }
+
+            .small-light {
+              color: var(--paper-grey-500);
+              font-size: 13px;
+            }
+
+            .avatar {
+              display: inline-block;
+              height: 180px;
+              width: auto;
+              color: white;
+              line-height: 180px;
+            }
+            .block {
+              position: absolute;
+              padding: 16px 0;
+              bottom: 75px;
+              width: calc(100% - 32px);
+            }
+
+            .avatar img {
+              height: 100%;
+              width: auto;
+            }
+            .wrapper {
+              margin-left: auto;
+              margin-right: auto;@apply(--layout-vertical);
+              @apply(--layout-wrap);
+            }
+            .icon {
+              width: 20px;
+            }
+            .orange:hover {
+              background: var(--paper-orange-50);
+              border-radius: 50%;
+            }
+            .orange {
+              color: var(--paper-orange-500);
+            }
+
+            .red:hover {
+              background: var(--paper-red-50);
+              border-radius: 50%;
+            }
+            .red {
+              color: var(--paper-red-500);
+            }
+          .top {
+          }
+          .top > * {
+            @apply(--layout-self-start);
+          }
+
+        </style>
+        <div class="wrapper">
+        <firebase-collection
+                location="https://blinding-heat-661.firebaseio.com/vinos"
+                data="{{vinos}}"></firebase-collection>
+        <template is="dom-repeat" items="[[vinos]]" as="vino">
+
+          <paper-card class="paper-card">
+
+            <div class="card-content">
+              <div class="avatar">
+                <img class="paper-card" src=[[vino.imagen]]>
+              </div>
+              <div class="title card-content">
+                <div class="small">[[vino.productor]]</div>
+                <div class="medium line-clamp">[[vino.nombre]]</div>
+
+                <div class="block">
+                  <iron-icon class="icon red" icon="maps:place"></iron-icon>
+                  <span class="small-light location">[[vino.denominación]]</span>
+                </div>
+                <div class="card-actions">
+
+                  <div>
+                    <span class="score large">
+                    4,5
+                    </span>
+                    <span class="top">
+                      <iron-icon class="icon orange" icon="star"></iron-icon>
+                      <iron-icon class="icon orange" icon="star"></iron-icon>
+                      <iron-icon class="icon orange" icon="star"></iron-icon>
+                      <iron-icon class="icon orange" icon="star-half"></iron-icon>
+                      <iron-icon class="icon orange" icon="star-border"></iron-icon>
+                    </span>
+
+                  </div>
+                  <div>
+
+                  </div>
+
+                  </div>
+              </div>
+
+            </div>
+
+        </paper-card>
+
+        </template>
+        </div>
+    </template>
+
+    <script>
+        (function() {
+            'use strict';
+
+            Polymer({
+                is: 're-wine'
+            });
+        })();
+    </script>
+
+</dom-module>
+
